@@ -21,7 +21,7 @@
 <div class="switches">
     {#each options as switchName}
         <div style="width: 200px; text-align: center;">
-            <img id="{switchName}" on:click={handleClick} src="{toggle}"/>
+            <img alt="a switch" id="{switchName}" on:click={handleClick} src="{toggle}"/>
             <p>{switchName}</p>
         </div>
     {/each}
