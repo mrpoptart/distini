@@ -16,7 +16,7 @@
     }
     const dispatch = createEventDispatcher();
 </script>
-<h1> YEAH LET'S {knobSelection.toUpperCase()} SOME SHIT</h1>
+<h2> YEAH LET'S {knobSelection.toUpperCase()} SOME SHIT</h2>
 {#if knobSelection !== 'do'}
 <div class="switches">
     {#each options as switchName}

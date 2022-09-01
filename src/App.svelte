@@ -125,6 +125,7 @@
 </script>
 
 <div class="main">
+    <h1>This Is Your Distini</h1>
     <Knob on:select={handleKnobSelect}/>
     <Switches resetClasses="{resetClasses}" options="{Object.keys(options[knobSelection])}" knobSelection="{knobSelection}" on:select={handleSwitch}/>
     {#if switchSelection!=='nothin'}
