@@ -1,14 +1,9 @@
 <script>
     export let spells;
-    function handleClick(e){
-        let url = `https://pf2.d20pfsrd.com/spell/${e.target.innerText.toLowerCase().replace(/[^a-z]/, '-')}/`;
-        console.log(url)
-        window.location = url;
-    }
 </script>
 <ul>
     {#each spells as spell}
-        <li on:click={handleClick}>{spell}</li>
+        <a href="https://pf2.d20pfsrd.com/spell/{spell.toLowerCase().replace(/[^a-z]/, '-')}/"><li>{spell}</li></a>
     {/each}
 </ul>
 <style>
